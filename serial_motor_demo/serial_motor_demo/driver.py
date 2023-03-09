@@ -123,9 +123,9 @@ class MotorDriver(Node):
             m2_diff = resp[1] - self.last_m2_enc
             self.last_m2_enc = resp[1]
             m3_diff = resp[2] - self.last_m3_enc
-            self.last_m3_enc = resp[0]
+            self.last_m3_enc = resp[2]
             m4_diff = resp[3] - self.last_m4_enc
-            self.last_m4_enc = resp[1]            
+            self.last_m4_enc = resp[3]            
 
             rads_per_ct = 2*math.pi/self.get_parameter('encoder_cpr').value
             self.m1_spd = m1_diff*rads_per_ct/time_diff
