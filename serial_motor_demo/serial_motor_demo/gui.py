@@ -76,7 +76,7 @@ class MotorGui(Node):
         self.m3.pack(side=LEFT, fill=X, expand=True)
 
         m4_frame = Frame(root)
-        m2_frame.pack(fill=X)
+        m4_frame.pack(fill=X)
         Label(m4_frame, text="Motor 4").pack(side=LEFT)
         self.m4 = Scale(m4_frame, from_=-255, to=255, resolution=1, orient=HORIZONTAL)
         self.m4.pack(side=LEFT, fill=X, expand=True)
